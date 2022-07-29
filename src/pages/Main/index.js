@@ -148,6 +148,7 @@ class Main extends Component {
         * @author Alfie Osayan
     */
     handleDeleteRowData = id => {
+        /* if the user clicks the confirm button, will delete the data to the table */
         if (window.confirm("Are you sure you want to delete?")) {
             const table_data = this.state.table_data.filter(user => user.id !== id);
             this.setState({ table_data });
@@ -203,7 +204,9 @@ class Main extends Component {
     updateUserData = (first_name, last_name, email) => {
         let { table_data, id } = this.state;
 
+        /* Will loop to check if the user data is in the table data */
         let new_data = table_data.map(row_data => {
+            /*  will update if user data id matches in the row data id */
             if (row_data.id === id) {
                 return { ...row_data, first_name, last_name, email };
             }
