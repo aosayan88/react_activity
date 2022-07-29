@@ -1,7 +1,11 @@
 /* REACT */
 import React from 'react';
 
-/*  Table Component */
+/**
+ * This component class is being called on the ../../Main.js
+ * @author Alfie
+ * Last Updated Date: July 29, 2022
+ */
 const Table = ({ table_data, columns, onEdit, onDelete, onMove }) => {
     return (
         <table>

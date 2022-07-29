@@ -1,7 +1,11 @@
 /* REACT */
 import React from 'react';
 
-/* Input Field Component */
+/**
+ * This component class is being called on the ../../Main.js
+ * @author Alfie
+ * Last Updated Date: July 29, 2022
+ */
 const Input = ({
     id,
     type,

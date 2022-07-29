@@ -5,11 +5,15 @@ import React, { Component, Fragment } from 'react';
 import "../../assets/css/style.css";
 
 /* COMPONENTS */
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import Table from "../../components/Table";
+import Input from "../../components/FormInput";
+import Button from "../../components/FormButton";
+import Table from "../../components/FormDataTable";
 
-/*  Main Page Component */
+/**
+ * This component class is being called on the ../../App.js
+ * @author Alfie
+ * Last Updated Date: July 29, 2022
+ */
 class Main extends Component {
     constructor(props) {
         super(props);
